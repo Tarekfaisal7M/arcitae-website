@@ -4,6 +4,17 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.btn-primary {
+    border-radius: 8px;
+    color: aliceblue;
+    background: #FF900E;
+    padding: 19px 24px;
+    font-size: 2.5rem;
+    color: azure;
+    cursor: pointer;
+    border: 0;
+}
+
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -14,7 +25,8 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
+
+.nav-title {
     font-size: 2.8rem;
     font-weight: 700px;
     color: #131313;
@@ -30,20 +42,78 @@ nav li {
     font-size: 1rem;
     font-weight: 500;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: var(--Dark-02, #424242);
 }
-.banner-content{
+
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700px;
     color: #131313;
 }
-.banner-dis{
+
+.banner-dis {
     color: #727272;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-c{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.teams-title{
+    font-size: 2.9rem;
+}
+#q-list{
+    color: #727272;
+    font-weight: 500;
+}
+#q-list3{
+    color: #FF900E;
+    font-weight: 700;
 }
